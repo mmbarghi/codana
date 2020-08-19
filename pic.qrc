@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>back_login.jpg</file>
+        <file>profile90.png</file>
+        <file>login_logo.png</file>
+        <file>login_codana.png</file>
+        <file>login_bank.png</file>
+        <file>menu_back.jpg</file>
+        <file>mini_logo.png</file>
+        <file>mini_profile.png</file>
+        <file>create_account_icon.png</file>
+        <file>manege_account_icon.png</file>
+        <file>edit_profile_icon.png</file>
+        <file>session_icon.png</file>
+        <file>info_icon.png</file>
+        <file>exit_icon.png</file>
+    </qresource>
+</RCC>

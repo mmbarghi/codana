@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>admin_accounts_win</class>
+ <widget class="QDialog" name="admin_accounts_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="backbtn">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>530</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>بازگشت</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>411</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>کارت های سیستم:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="cardstable">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>شماره کارت</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>cvv2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>وضعیت</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>تاریخ انقضا</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>نام صاحب کارت</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="unblockcardbtn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>رفع مسدودیت کارت</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="blockcardbtn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>مسدود کردن کارت</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>411</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>حساب های موجود در سیستم:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="accountstable">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>شماره حساب</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>نوع حساب</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>موجودی</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>وضعیت حساب</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>نام صاحب حساب</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="unblockaccountbtn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>رفع مسدودیت حساب</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="blockaccountbtn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>مسدود کردن حساب</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
